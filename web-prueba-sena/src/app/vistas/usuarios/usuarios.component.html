@@ -1,0 +1,29 @@
+<app-header></app-header>
+<br>
+<div class="container">
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Direccion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of usuarios">
+            <th scope="row">{{usuario.usuarioId}}</th>
+            <td>{{usuario.usuarioNombres}}</td>
+            <td>{{usuario.usuarioApellidos}}</td>
+            <td>{{usuario.usuarioTelefono}}</td>
+            <td>{{usuario.usuarioEmail}}</td>
+            <td><button>Accept</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
+
+
+<app-footer></app-footer>
